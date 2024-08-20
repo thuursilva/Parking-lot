@@ -45,60 +45,41 @@ input::placeholder{
 }
 
 #btnRegister{
-    background: rgb(54,14,97);
-    background: linear-gradient(117deg, rgba(54,14,97,1) 0%, rgba(65,0,255,1) 73%);
+    background: rgb(3, 3, 206);
     color: #fff;
     border-radius: .5rem;
     padding: .5rem 1rem;
     border: 1px solid black;
-    transition: 0.25s;
 }
 
 #btnRegister:hover{
-    background: rgba(65,0,255,1);
-    color: #000;
+    background: rgb(42, 11, 75);
+    background: linear-gradient(117deg, rgb(36, 10, 65) 0%, rgb(51, 5, 190) 73%);
+    cursor: pointer;
 }
 
-.table-head{
-    display: flex;
-    margin-bottom: 1rem;
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-th{
-    font-size: 1rem;
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 0.25px solid #ddd;
 }
 
-#parkingLot{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+
+.delete {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
-tr{
-    display: flex;
+.delete:hover {
+    background-color: darkred;
 }
 
-.name-head{
-    min-width: 1.5rem;
-    padding: 0 2rem 0 0;
-}
 
-.plate-head{
-    padding: 0 5rem 0 0;
-}
-
-.entry-head{
-    padding: 0 10rem 0 0;
-}
-
-.name{
-    padding: 0 2rem 0 0;
-}
-
-.plate{
-    padding: 0 2rem 0 0;
-}
-
-.entry{
-    padding: 0 3rem 0 0;
-}

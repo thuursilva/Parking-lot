@@ -65,12 +65,14 @@
     parkingLot().render();
     (_a = $("#btnRegister")) === null || _a === void 0 ? void 0 : _a.addEventListener("click", () => {
         var _a, _b;
-        const name = (_a = $("#name")) === null || _a === void 0 ? void 0 : _a.value;
-        const plate = (_b = $("#plate")) === null || _b === void 0 ? void 0 : _b.value;
+        let name = (_a = $("#name")) === null || _a === void 0 ? void 0 : _a.value;
+        let plate = (_b = $("#plate")) === null || _b === void 0 ? void 0 : _b.value;
         if (!name || !plate) {
             alert("Os campos nome e placa são obrigatórios");
             return;
         }
         parkingLot().add({ name, plate, entry: new Date().toISOString() }, true);
+        name = "";
+        plate = "";
     });
 })();

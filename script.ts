@@ -85,8 +85,8 @@ interface Vehicle {
     parkingLot().render();
   
     $("#btnRegister")?.addEventListener("click", () => {
-      const name = $("#name")?.value;
-      const plate = $("#plate")?.value;
+      let name = $("#name")?.value;
+      let plate = $("#plate")?.value;
   
       if (!name || !plate) {
         alert("Os campos nome e placa são obrigatórios");
