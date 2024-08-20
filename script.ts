@@ -27,9 +27,9 @@ interface Vehicle {
         const row = document.createElement("tr");
   
         row.innerHTML = `
-          <td>${vehicle.name}</td>
-          <td>${vehicle.plate}</td>
-          <td>${vehicle.entry}</td>
+          <td class="name">${vehicle.name}</td>
+          <td class="plate">${vehicle.plate}</td>
+          <td class="entry">${vehicle.entry}</td>
           <td>
               <button class="delete" data-plate="${vehicle.plate}">x</button>
           </td>
